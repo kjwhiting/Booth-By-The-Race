@@ -1,20 +1,37 @@
-function switchTab(tabId) {
-  document.querySelectorAll(".tab-content").forEach(function (content) {
-    content.classList.remove("active");
-  });
+document.addEventListener("DOMContentLoaded", function () {
+  var buttons = document.querySelectorAll("nav button[data-tab]");
+  var gameInitialized = false; // Tracks if the arcade game has been booted yet
 
-  document.querySelectorAll("nav button").forEach(function (button) {
-    button.classList.remove("active");
-  });
+  buttons.forEach(function (button) {
+    button.addEventListener("click", function () {
+      var tabId = this.getAttribute("data-tab");
 
-  var targetTab = document.getElementById(tabId);
-  if (targetTab) {
-    targetTab.classList.add("active");
-  }
+      // 1. Hide all tab content blocks
+      document.querySelectorAll(".tab-content").forEach(function (content) {
+        content.classList.remove("active");
+      });
 
-  document.querySelectorAll("nav button").forEach(function (button) {
-    if (button.getAttribute("onclick") === "switchTab('" + tabId + "')") {
-      button.classList.add("active");
-    }
+      // 2. Deactivate all navigation buttons
+      buttons.forEach(function (btn) {
+        btn.classList.remove("active");
+      });
+
+      // 3. Show the targeted tab content
+      var target = document.getElementById(tabId);
+      if (target) {
+        target.classList.add("active");
+      }
+
+      // 4. Set clicked button to active
+      this.classList.add("active");
+
+      // 5. Lazy-initialize the game when the "demo" tab is clicked for the first time
+      if (tabId === "demo" && !gameInitialized) {
+        if (typeof initNumStrike === "function") {
+          initNumStrike();
+          gameInitialized = true;
+        }
+      }
+    });
   });
-}
+});

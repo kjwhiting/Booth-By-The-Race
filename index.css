@@ -82,9 +82,7 @@ nav {
     justify-content: center;
     gap: 2rem;
     margin-top: 2rem;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+    flex-wrap: wrap;
     padding-bottom: 0.25rem;
 }
 
@@ -286,6 +284,14 @@ aside.do-list ol li::before {
     font-weight: bold;
 }
 
+aside.plain-list ol li {
+    padding-left: 0;
+}
+
+aside.plain-list ol li::before {
+    content: none;
+}
+
 fieldset {
     border: 1px dashed rgba(125, 161, 140, 0.3);
     background-color: var(--bg-card);
@@ -400,6 +406,7 @@ ol.timeline li + li {
 }
 
 ol.timeline li time {
+    padding-right: 12px;
     font-size: 0.78rem;
     font-weight: 600;
     letter-spacing: 1px;

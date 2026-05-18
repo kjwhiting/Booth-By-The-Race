@@ -18,10 +18,11 @@
         <p>A human-paced sanctuary</p>
         
         <nav>
-            <button class="active" onclick="switchTab('intro')">Introduction</button>
-            <button onclick="switchTab('rules')">Ground Rules</button>
-            <button onclick="switchTab('qualifications')">My Qualifications</button>
-            <button onclick="switchTab('fundamentals')">Fundamentals</button>
+            <button class="active" data-tab="intro">Introduction</button>
+            <button data-tab="rules">Ground Rules</button>
+            <button data-tab="qualifications">My Qualifications</button>
+            <button data-tab="demo">Arcade Game</button>
+            <button data-tab="fundamentals">Fundamentals</button>
         </nav>
     </header>
 
@@ -30,7 +31,7 @@
         <div id="intro" class="tab-content active">
             <section>
                 <h2>Pull Up a Chair</h2>
-                <p>"Those who are not using AI will lose their jobs to someone who is."<br><strong>I say, take it.</strong></p>
+                <p>"Those who are not using AI will lose their jobs to someone who is."<br><strong>I say, "take it."</strong></p>
                 <p>People have more value than capitalism suggests. I've stopped racing and I'm trying to set up a figurative "booth by the race". If you're tired of racing, this page is a resource. There is life on the other side of this; we just need to get honest about the tool and careful about how we use it. </p>
                 <p>Just to make this abundantly clear, I am not an AI authority. I wrote this based on my lived experience. I have used the tools and felt the personal cost of using them carelessly and without full understanding. Though at the time I felt I was being cautious, there is so much more to the world of AI than I originally understood. Fast pace AI adoption makes those costs difficult to detect even after payment. I want to help others slow down long enough to see them.</p>
                 <p>The intention of this guide is not to gatekeep, but to help people ground themselves in reality while exploring the tools.</p>
@@ -43,11 +44,11 @@
                 <article>
                     <small>The Goal</small>
                     <h3>Provide a robust general education for the emerging world of AI</h3>
-                    <p>Currently, much of the AI education available online emphasizes how to use or set up AI, often focusing on enterprise tools. I think a general education is wider scoped than that. This will help you get started with AI, but prioritizes concepts like:</p>
+                    <p>Currently, much of the AI education available online emphasizes how to use or set up AI, often focusing on enterprise tools. I think a general education is wider scoped than that. This course will help you get started with AI, but prioritizes concepts like:</p>
 
                     <ul>
                         <li>Do you even want to get setup?</li>
-                        <li>What should I be concerned about?</li>
+                        <li>What should you be concerned about?</li>
                         <li>How to know if you're abusing the tool?</li>
                         <li>Why does self-reflection matter?</li>
                         <li>Who will be impacted by the choices you are making when using the tool?</li>
@@ -177,7 +178,7 @@
                         <time>2023</time>
                         <div>
                             <p>My employer deployed an AI image generation tool. This will come up again later. This moment is when I had my first, "What's the point?" crisis. My artwork slowed, and it was hard to continue to show up despite the prior dedication.</p>
-                            <p>I chose to ignore the tools. Keeping the skills was more important to me than anything AI was promising.</p>
+                            <p>I chose to ignore the AI tools. Keeping the skills was more important to me than anything AI was promising.</p>
                         </div>
                     </li>
                     <li>
@@ -199,11 +200,30 @@
                 </ol>
 
                 <blockquote>
-                    <p>The next page has a few math games I built using AI prompts. Though they are not a showcase of what AI can do, they demonstration my ability to get AI to produce something I think might be of value.</p>
+                    <p>The next page has a math game I built using AI prompts. Though they are not a showcase of what AI can do, they demonstration my ability to get AI to complete a task I give it. I kept it simple intentionally, just enough to showcase that I can work effectively within AI prompts. The intention was to produce the full game with a single prompt from a free version of the tool.</p>
                 </blockquote>
 
-                <p>What I want you to take away is simple. AI is here to stay. That means we need to figure out what life looks like with this new development. Rather than use the tool for financial gain, I've shifted to finding ways to use the tool meaningfully. That is why this course exists. Speed is not always the answer.</p>
+                <p>What I want you to take away is simple. AI is here to stay. That means we need to figure out what life looks like with this new development. Rather than use the tool for financial gain, I've shifted to finding ways to use the tool meaningfully. That is why this course exists. There is more to life than chasing money and speed is not always the answer.</p>
 
+            </section>
+        </div>
+
+        <div id="demo" class="tab-content">
+            <section>
+                <h2>Prompt Competency Demo</h2>
+
+                <blockquote>Sorry this game requires keyboard with arrow keys to play.</blockquote>
+                
+                <p>This section serves as a practical demonstration of working alongside an AI chat system. The arcade game below was generated using free version of AI chat software. It was a single prompt without any human edits. I chose not to provide the full prompt at this time as it could be missused. We will get to writing prompts, but for now this is to demo my competency with leveraging AI tools.</p>
+                
+                <blockquote>
+                    <p><strong>Controls:</strong> A (+2), S (+3), D (+5), W (+7). Press keys to build your sum. Up/Down arrows nudge by 2. Left/right arrows to move. Space to fire. Backspace returns to 0.</p>
+                </blockquote>
+
+                <!-- Isolated Game Console Wrapper -->
+                <div class="arcade-viewport" style="display: flex; justify-content: center; margin: 40px auto 20px; background: #000; padding: 20px; border-radius: 4px; max-width: 520px;">
+                    <canvas id="c"></canvas>
+                </div>
             </section>
         </div>
 
@@ -250,7 +270,7 @@
                 <p>There are two main sections when assessing ego vs capability. They both tie into our individual usage of the tool. First, how capable are we in prompting AI? Second, how capable are we in assessing the results?</p>
 
                 <div>
-                    <aside class="never-list">
+                    <aside class="plain-list">
                         <h3>When crafting prompts, where are you?</h3>
                         <ol>
                             <li>
@@ -268,7 +288,7 @@
                         </ol>
                     </aside>
 
-                    <aside class="never-list">
+                    <aside class="plain-list">
                         <h3>When assessing the results, where are you?</h3>
                         <ol>
                             <li>
@@ -299,7 +319,11 @@
         <p>Take your time. Races require participants. This is a reminder, we don't have to participate.</p>
     </footer>
 
-    <script src="navigation.js"></script>
+    <script src="numstrike.js"> </script>
+    <script src="navigation.js"> </script>
+    <script>
+   
+    </script>
 
 </body>
 </html>
