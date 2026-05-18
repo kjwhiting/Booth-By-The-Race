@@ -82,7 +82,10 @@ nav {
     justify-content: center;
     gap: 2rem;
     margin-top: 2rem;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 0.25rem;
 }
 
 nav button {
@@ -263,7 +266,7 @@ aside ol li span {
     padding-left: 0.75rem;
 }
 
-aside:first-child ol li::before {
+aside.never-list ol li::before {
     content: "✕";
     position: absolute;
     left: 0;
@@ -273,7 +276,7 @@ aside:first-child ol li::before {
     font-weight: bold;
 }
 
-aside:last-child ol li::before {
+aside.do-list ol li::before {
     content: "✓";
     position: absolute;
     left: 0;
@@ -341,4 +344,94 @@ footer p {
     font-size: 0.8rem;
     color: var(--text-muted);
     letter-spacing: 1px;
+}
+
+.byline {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    margin: 2.5rem 0;
+}
+
+.byline-mark {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: var(--accent-glow);
+    box-shadow: 0 0 10px 5px rgba(223, 122, 94, 0.3);
+    flex-shrink: 0;
+}
+
+.byline p {
+    font-size: 1.3rem;
+    font-weight: 400;
+    letter-spacing: -0.2px;
+    margin-bottom: 0;
+    color: var(--text-main);
+}
+
+ol.timeline {
+    list-style: none;
+    padding: 0;
+    margin: 3rem 0;
+    position: relative;
+}
+
+ol.timeline::before {
+    content: "";
+    position: absolute;
+    left: 3.5rem;
+    top: 0.6rem;
+    bottom: 0.6rem;
+    width: 1px;
+    background: linear-gradient(to bottom, var(--accent-glow), rgba(125, 161, 140, 0.2));
+}
+
+ol.timeline li {
+    display: grid;
+    grid-template-columns: 4rem 1fr;
+    gap: 1.5rem;
+    margin-bottom: 0;
+    position: relative;
+}
+
+ol.timeline li + li {
+    margin-top: 0;
+}
+
+ol.timeline li time {
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--accent-glow);
+    text-align: right;
+    padding-top: 0.15rem;
+    line-height: 1.8;
+    opacity: 0.85;
+}
+
+ol.timeline li::after {
+    content: "";
+    position: absolute;
+    left: calc(4rem + 0.75rem - 3px);
+    top: 0.6rem;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--bg-page);
+    border: 1.5px solid var(--accent-soft);
+}
+
+ol.timeline li div {
+    padding: 0 0 2.5rem 1.25rem;
+}
+
+ol.timeline li div p {
+    font-size: 0.97rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+ol.timeline li div p:last-child {
+    margin-bottom: 0;
 }
