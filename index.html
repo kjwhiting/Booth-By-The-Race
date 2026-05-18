@@ -18,9 +18,11 @@
         <p>A human-paced sanctuary</p>
         
         <nav>
-            <button class="active" onclick="switchTab('intro')">Introduction</button>
-            <button onclick="switchTab('rules')">Ground Rules</button>
-            <button onclick="switchTab('get-started')">Let's Get Started</button>
+            <button class="active" data-tab="intro">Introduction</button>
+            <button data-tab="rules">Ground Rules</button>
+            <button data-tab="qualifications">My Qualifications</button>
+            <button data-tab="demo">Arcade Game</button>
+            <button data-tab="fundamentals">Fundamentals</button>
         </nav>
     </header>
 
@@ -29,32 +31,32 @@
         <div id="intro" class="tab-content active">
             <section>
                 <h2>Pull Up a Chair</h2>
-                <p>“Those who are not using AI will lose their jobs to someone who is.”<br><strong>I say, take it.</strong></p>
-                <p>People have more value than capitalism suggests. I’ve stopped racing and I’m trying to set up a figurative “booth by the race”. If you’re tired of racing, this page is a resource. There is life on the other side of this; we just need to get honest about the tool and careful about how we use it. </p>
+                <p>"Those who are not using AI will lose their jobs to someone who is."<br><strong>I say, "take it."</strong></p>
+                <p>People have more value than capitalism suggests. I've stopped racing and I'm trying to set up a figurative "booth by the race". If you're tired of racing, this page is a resource. There is life on the other side of this; we just need to get honest about the tool and careful about how we use it. </p>
                 <p>Just to make this abundantly clear, I am not an AI authority. I wrote this based on my lived experience. I have used the tools and felt the personal cost of using them carelessly and without full understanding. Though at the time I felt I was being cautious, there is so much more to the world of AI than I originally understood. Fast pace AI adoption makes those costs difficult to detect even after payment. I want to help others slow down long enough to see them.</p>
                 <p>The intention of this guide is not to gatekeep, but to help people ground themselves in reality while exploring the tools.</p>
             </section>
 
             <section>
                 <h2>A Friend's Guide to Staying Safe</h2>
-                <p>This is a reminder that slowing down is an option. Frantically trying to learn the tool is the fastest way to misuse it. Those trapped in the race are going to plow through. Let them go, get to safety, and then let’s get to work on developing a future that will work for all of us. We’ll take as long as necessary.</p>
+                <p>This is a reminder that slowing down is an option. Frantically trying to learn the tool is the fastest way to misuse it. Those trapped in the race are going to plow through. Let them go, get to safety, and then let's get to work on developing a future that will work for all of us. We'll take as long as necessary.</p>
                 
                 <article>
                     <small>The Goal</small>
                     <h3>Provide a robust general education for the emerging world of AI</h3>
-                    <p>Currently, much of the AI education available online emphasizes how to use or set up AI, often focusing on enterprise tools. I think a general education is wider scoped than that. This will help you get started with AI, but prioritizes concepts like:</p>
+                    <p>Currently, much of the AI education available online emphasizes how to use or set up AI, often focusing on enterprise tools. I think a general education is wider scoped than that. This course will help you get started with AI, but prioritizes concepts like:</p>
 
                     <ul>
                         <li>Do you even want to get setup?</li>
-                        <li>What should I be concerned about?</li>
-                        <li>How to know if you’re abusing the tool?</li>
+                        <li>What should you be concerned about?</li>
+                        <li>How to know if you're abusing the tool?</li>
                         <li>Why does self-reflection matter?</li>
                         <li>Who will be impacted by the choices you are making when using the tool?</li>
                         <li>How can we identify dangerous ideas and practices?</li>
                     </ul>
                 </article>
 
-                <p>I don’t have all the answers, but humans are resourceful. I trust that the right people will eventually see this and know what to do with the content I’m providing. In other words, I trust humans will continue being human. Let’s work together to build a better tomorrow.</p>
+                <p>I don't have all the answers, but humans are resourceful. I trust that the right people will eventually see this and know what to do with the content I'm providing. In other words, I trust humans will continue being human. Let's work together to build a better tomorrow.</p>
             </section>
         </div>
 
@@ -62,17 +64,17 @@
             <section>
                 <h2>Ground Rules</h2>
                 
-                <p><strong>These are my personal Dos and Don’ts with AI</strong></p>
-                <p>As AI becomes more capable, these may change. To keep myself and my family safe, I’ve setup these guardrails for us. Just keep in mind that AI is still in development. We need to remain hyper-aware of that fact.&nbsp;</p>
+                <p><strong>These are my personal Dos and Don'ts with AI</strong></p>
+                <p>As AI becomes more capable, these may change. To keep myself and my family safe, I've setup these guardrails for us. Just keep in mind that AI is still in development. We need to remain hyper-aware of that fact.&nbsp;</p>
                 
                 <blockquote>
                     <p>Above all, when in doubt, do it yourself or hire a human expert. Relying on other humans is the default safety net. Humans have done this for hundreds of thousands of years, no reason to abandon this idea now.&nbsp;</p>
                 </blockquote>
                 
-                <p><small>NEVER is more of a “not now” rather than “never ever.”</small></p>
+                <p><small>NEVER is more of a "not now" rather than "never ever."</small></p>
 
                 <div>
-                    <aside>
+                    <aside class="never-list">
                         <h3>The never list</h3>
                         <ol>
                             <li><strong>NEVER</strong> use AI as a shortcut to learning</li>
@@ -107,7 +109,7 @@
                         </ol>
                     </aside>
 
-                    <aside>
+                    <aside class="do-list">
                         <fieldset>
                             <h3>Do if you have proper education</h3>
                             <ol>
@@ -140,14 +142,173 @@
             </section>
         </div>
 
-        <div id="get-started" class="tab-content">
+        <div id="qualifications" class="tab-content">
             <section>
-                <h2>Let's Get Started</h2>
+                <h2>My Qualifications</h2>
+
+                <p>AI is still in its infancy. No person on Earth is actually qualified to speak authoritatively on the effects of using it regularly. While some experts understand the technology's construction, expertise regarding its application and its effects on users is still evolving. This means the most honest qualification anyone can offer right now is experience. Here is mine.</p>
+
+                <div class="byline">
+                    <div class="byline-mark"></div>
+                    <p>My name is Kyle Whiting.</p>
+                </div>
+
+                <p>I am raising two kids with my wife. They inspire my work and dedication. I want their future to be bright and full.</p>
+
+                <ol class="timeline">
+                    <li>
+                        <time>2016</time>
+                        <div>
+                            <p>I graduated with a Bachelor's in Math Education and a minor in Computer Science from Utah Valley University.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <time>2017</time>
+                        <div>
+                            <p>I set a goal to draw for 45 minutes every day and diligently stuck to the commitment for years. I learned primarily through online courses. That journey pulled me into digital art, 3D animation, 3D sculpting, traditional sculpting, sewing, and more.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <time>2021</time>
+                        <div>
+                            <p>I wrote and illustrated my first children's book, "Dear Alien" (unpublished, but I did the work on my own, no AI).</p>
+                        </div>
+                    </li>
+                    <li>
+                        <time>2023</time>
+                        <div>
+                            <p>My employer deployed an AI image generation tool. This will come up again later. This moment is when I had my first, "What's the point?" crisis. My artwork slowed, and it was hard to continue to show up despite the prior dedication.</p>
+                            <p>I chose to ignore the AI tools. Keeping the skills was more important to me than anything AI was promising.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <time>2024</time>
+                        <div>
+                            <p>I began learning piano and studying music theory alongside drawing.</p>
+                            <p>Early that year, my employer applied pressure for adopting AI. It went into everything regardless of any pushback. The overwhelmingly positive support for AI was exhausting.</p>
+                            <p>In October, I left my corporate job and took a self-funded sabbatical. During that sabbatical, I set out to explore what life might be like with AI. This time, under my own conditions. Away from corporate pressure. I turned to AI with real expectations. It promised to help me get the stories out of my head. It promised to handle marketing, simplify decisions, and make running a creative business manageable. I trusted it.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <time>2025</time>
+                        <div>
+                            <p>In April, I published "Arithmetic Island: The Cursed Dragon." AI played a role in that process. I used it to provide academic feedback throughout the drafting phase, asking it to evaluate voice, sentence structure, character development, environment, and descriptions. I also leaned on it as a career coach when setting up my writing business, using it to guide decisions and fill in the gaps of my lacking personal experience.</p>
+                            <p>Before the book came out, my beta readers flagged things AI had never mentioned. Foundational stuff that should have surfaced early in the draft. My editor found more. These were humans -- the missing element of AI feedback. Some of the required edits were too large to tackle. Rather than doing the hard work, I patch something together. It worked well enough, but I regret not taking more time. The book came out and I am still proud of it. It is a reasonable first book. My next stories will not have these mistakes.</p>
+                            <p>Even after publication, I found problems that were difficult for a beginner to detect. I struggled to read the piece out loud because it wasn't my voice. As a writer, voice is everything, but it was too late. This experience taught me that AI does not make you an expert. It can make you feel like one. Non critical beginners will miss this in every field in which they leverage AI.</p>
+                        </div>
+                    </li>
+                </ol>
+
+                <blockquote>
+                    <p>The next page has a math game I built using AI prompts. Though they are not a showcase of what AI can do, they demonstration my ability to get AI to complete a task I give it. I kept it simple intentionally, just enough to showcase that I can work effectively within AI prompts. The intention was to produce the full game with a single prompt from a free version of the tool.</p>
+                </blockquote>
+
+                <p>What I want you to take away is simple. AI is here to stay. That means we need to figure out what life looks like with this new development. Rather than use the tool for financial gain, I've shifted to finding ways to use the tool meaningfully. That is why this course exists. There is more to life than chasing money and speed is not always the answer.</p>
+
+            </section>
+        </div>
+
+        <div id="demo" class="tab-content">
+            <section>
+                <h2>Prompt Competency Demo</h2>
+
+                <blockquote>Sorry this game requires keyboard with arrow keys to play.</blockquote>
+                
+                <p>This section serves as a practical demonstration of working alongside an AI chat system. The arcade game below was generated using free version of AI chat software. It was a single prompt without any human edits. I chose not to provide the full prompt at this time as it could be missused. We will get to writing prompts, but for now this is to demo my competency with leveraging AI tools.</p>
+                
+                <blockquote>
+                    <p><strong>Controls:</strong> A (+2), S (+3), D (+5), W (+7). Press keys to build your sum. Up/Down arrows nudge by 2. Left/right arrows to move. Space to fire. Backspace returns to 0.</p>
+                </blockquote>
+
+                <!-- Isolated Game Console Wrapper -->
+                <div class="arcade-viewport" style="display: flex; justify-content: center; margin: 40px auto 20px; background: #000; padding: 20px; border-radius: 4px; max-width: 520px;">
+                    <canvas id="c"></canvas>
+                </div>
+            </section>
+        </div>
+
+        <div id="fundamentals" class="tab-content">
+            <section>
+                <h2>Fundamentals</h2>
+
+                <p>Our current societal system has natural guardrails that prevent beginners from doing foolishly dangerous things. For example, educators would not allow you to take on doctorate level work until you worked through the foundations and progressed through the natural flow of learning. A chemist will not tell you how to make a dangerous chemical without proper instruction first. AI removes these guardrails. The only thing standing between you and getting AI to build a dangerous chemical is knowing how to provide the right kind of prompt and getting access to materials.</p>
+
+                <p>Considering a beginner may accidentally stumble across field expert level content should give everyone a moment of pause. We need to work to reduce the risk of accidental mishaps. This means every human being needs to level up their general education. Anyone considering their general education done today, now has a responsibility to chose to educate themselves on this matter. Where high school and general education is reinforced by society, AI general education is by choice. In addition, we still do not have a comprehensive general education for this new tool. I wrote this note not to overwhelm but to reinforce how serious and wide-ranging the missing general education elements are today.</p>
+
+                <p>Artificial intelligence makes it so that we no longer need to rely on other humans for these guardrails. It promises to eventually be our doctor, surgeon, educator, chef, comedian, truck driver, and overall source of truth for knowledge. Luckily, there are still major problems preventing the tool from becoming all of them. That gives us time -- not much, but some.</p>
+
+                <p>There are AI experts who suggest AI will make education unnecessary. In essence, AI will take care of us. Though I love the idea of laziness that comes from this notation, I disagree. I think this means general education needs a significant upgrade, and fast. If AI were being adopted slowly, we would have more time to adapt. How this impacts you and me is that the fast paced adoption means each individual is the holder of their own guardrails.</p>
+
                 <article>
-                    <small>Coming Soon</small>
-                    <h3>More content coming soon</h3>
-                    <p>For now be critical of AI and go at your own pace. I'll update this page as soon as I can.</p>
+                    <small>The Foundation</small>
+                    <h3>Guardrail education requires skills that are difficult to teach because they are personal</h3>
+                    <p>These are skills that stem from:</p>
+                    <ul>
+                        <li>Self awareness</li>
+                        <li>Healthy belief in self</li>
+                        <li>Self regulation (self restraint)</li>
+                        <li>Diligence</li>
+                        <li>Dedication</li>
+                    </ul>
+                    <p>To my knowledge, the tools we have to tackle this problem exist within the realm of psychology and philosophy, as they are the subject of self.</p>
                 </article>
+
+                <p>The concept of self I want to discuss at this stage of our educational journey is that of the personal ego. Humanity, thus far in history, has not needed to deal with the level honest self reflection that AI requires. As AI becomes more capable, we may see a day when it is no longer required for humans to think. At least this is an adaptation that is already starting to take hold in society. When AI produces something at speeds incomprehensible to human speed and efficiency, self-doubt makes it easy to think, "That's better than I could do."</p>
+
+                <p>At our fingertips and under the right conditions, we can build thesis statements that PhD students might struggle to understand. Where this seems like a non problem, systems of extreme sophistication can provide an over-inflated sense of ego. The person to ask the questions that no one else is asking may confuse doing the work with proposing the question.</p>
+
+                <p>This is something humanity has not needed to deal with at the scale at which AI makes plausible. This isn't unique to today. Someone who says, "I thought of that idea a decade ago," for an invention to help humanity but they didn't go through the work to produce the item is exhibiting this style of over-inflated ego. AI compounds this problem significantly. The thought itself when compared to the work required to make it happen, is about to become very confusing process to separate.</p>
+
+                <p>The over-inflated ego is less likely to critique its own work. The pairing of ego with AI together means they are less likely to critique the output of AI. Scaling these concepts across multiple fields can make it challenging to keep ego in check. This gets at the question: what is the point of a PhD if I can already do the work with a high school diploma?</p>
+
+                <p>PhD's are expensive. AI, in comparison, is cheap. Well educated PhD's I know realize the things they don't know. Beginners do not have that same understanding. To give beginners or intermediates an over-inflated ego is a danger on a scale of which we have not needed to deal with in society to date.</p>
+
+                <blockquote>
+                    <p>To help fight this problem, we need everyone to be more honest in their assessment of expertise. This is not to gatekeep AI, but to remain grounded in reality. The following is intended to help identify personal qualifications to analyze AI responses.</p>
+                </blockquote>
+
+                <p>There are two main sections when assessing ego vs capability. They both tie into our individual usage of the tool. First, how capable are we in prompting AI? Second, how capable are we in assessing the results?</p>
+
+                <div>
+                    <aside class="plain-list">
+                        <h3>When crafting prompts, where are you?</h3>
+                        <ol>
+                            <li>
+                                <strong>AI Beginner</strong>
+                                <span>I consider myself to be in this category. I think all of humanity is currently in this category.</span>
+                            </li>
+                            <li>
+                                <strong>AI Intermediate</strong>
+                                <span>Without a general AI education, this piece remains incomplete. General education serves as a baseline to compare against. Until that is fully established no one can truly consider themselves in the intermediate category.</span>
+                            </li>
+                            <li>
+                                <strong>AI Expert</strong>
+                                <span>Without a clear baseline and intermediate step this remains unestablished today.</span>
+                            </li>
+                        </ol>
+                    </aside>
+
+                    <aside class="plain-list">
+                        <h3>When assessing the results, where are you?</h3>
+                        <ol>
+                            <li>
+                                <strong>Subject matter beginner</strong>
+                                <span>High school level understanding of the field.</span>
+                            </li>
+                            <li>
+                                <strong>Subject matter intermediate</strong>
+                                <span>Bachelor's degree or equivalent rigorous study. A bachelor's degree does not make someone an intermediate in every field, just in the one field they got a degree in.</span>
+                            </li>
+                            <li>
+                                <strong>Subject matter expert</strong>
+                                <span>Master's, PhD, or a similar level of rigorous training and expertise. If you do not have either you are not a subject matter expert. Relying on AI for advice may cause harm.</span>
+                            </li>
+                        </ol>
+                    </aside>
+                </div>
+
+                <p>Humans are rarely experts in more than a couple of fields and currently likely have limits of 4-6. That means we are all beginners in just about everything. Our overconfidence in using the tools might be the greatest danger to ourselves. If we are giving others advice based on that overconfidence, we may be putting others in danger, too.</p>
+
             </section>
         </div>
 
@@ -158,7 +319,11 @@
         <p>Take your time. Races require participants. This is a reminder, we don't have to participate.</p>
     </footer>
 
-    <script src="navigation.js"></script>
+    <script src="numstrike.js"> </script>
+    <script src="navigation.js"> </script>
+    <script>
+   
+    </script>
 
 </body>
 </html>
