@@ -442,3 +442,11 @@ ol.timeline li div p {
 ol.timeline li div p:last-child {
     margin-bottom: 0;
 }
+
+.emphasis {
+    border-left: 2px solid var(--accent-glow);
+    padding-left: 1.25rem;
+    font-size: 1.1rem;
+    letter-spacing: 0.2px;
+    opacity: 1;
+}
