@@ -450,3 +450,12 @@ ol.timeline li div p:last-child {
     letter-spacing: 0.2px;
     opacity: 1;
 }
+
+.quote {
+    align-items: center;
+    text-align: center;
+    padding: 12px;
+    background-color: var(--text-muted);
+    color: var(--bg-card);
+    border-radius: 12px;
+}
